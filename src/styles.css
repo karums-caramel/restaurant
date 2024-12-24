@@ -1,0 +1,100 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+
+    --background-r: 240;
+    --background-g: 245;
+    --background-b: 245;
+    --background-a: 1;
+    --background-grey: rgba(var(--background-r) var(--background-g) var(--background-b) / var(--background-a));
+
+    --main-background: rgb(252, 249, 239);
+
+    font-size: clamp(12px, max(4vh, 2vw), 20px);
+}
+
+#background {
+    background-image: url(./woods.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    z-index: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    filter: brightness(0.5);
+    filter: grayscale(0.54);
+}
+
+body {
+    display: grid;
+    grid-template: 1fr 9fr / 1fr;
+    height: 100vh;
+    width: clamp(min(max(25rem, 60vh), 100vw), 40vw, 40rem);
+    justify-self: center;
+    margin: 0;
+}
+
+header {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr;
+    background-color: var(--background-grey);
+    z-index: 6;
+}
+
+header h2 {
+    padding: 1rem 0 0 2rem;
+    z-index: 6;
+}
+
+nav {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    height: clamp(20px, 4rem, 50px);
+    width: max(60%, 10rem);
+    justify-self: center;
+    align-self: end;
+    gap: 1rem;
+    z-index: 6;
+}
+
+nav button {
+    border-top: 2px solid var(--background-grey);
+    border-left: 2px solid var(--background-grey);
+    border-right: 2px solid var(--background-grey);
+    border-bottom: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+    font-size: 1rem;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+article > ul > li {
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    > * {
+        font-size: 1rem;
+        font-weight: normal;
+    }
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button.active {
+    background-color: var(--main-background);
+}
+
+main {
+    background-color: var(--main-background);
+    padding: 1rem;
+    z-index: 6;
+}
