@@ -166,7 +166,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
   \***********************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"11b287ea9ccd255c2210.jpg\";\n\n//# sourceURL=webpack://restaurant/./src/resto.jpg?");
+eval("module.exports = __webpack_require__.p + \"11a15676ea5bcb0666d2.jpg\";\n\n//# sourceURL=webpack://restaurant/./src/resto.jpg?");
 
 /***/ }),
 
